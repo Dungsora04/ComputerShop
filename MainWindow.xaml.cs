@@ -24,11 +24,11 @@ namespace ComputerShop
             InitializeComponent();
         }
 
-        private void btnShowCustomers_Click(object sender, RoutedEventArgs e)
+        private void btnShowCustomers_Click(object sender, RoutedEventArgs e) 
         {
             List<KhachHang> khachHangs = new List<KhachHang>();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(connectionString))  
             {
                 connection.Open();
 
